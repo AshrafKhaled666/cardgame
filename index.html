@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة الكروت</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>لعبة الكروت</h1>
+    <div class="setup-phase">
+        <h2 id="current-player-message">اللاعب الأول، اختر الكارت!</h2>
+        <p>لديك <span id="timer">30</span> ثانية لاختيار الكارت</p>
+    </div>
+    <div id="game-board"></div>
+    <div class="controls">
+        <button id="guess-btn" disabled>تخمين</button>
+        <button id="restart-btn">إعادة تشغيل</button>
+    </div>
+    <div class="scores">
+        <p>نقاط اللاعب الأول: <span id="player1-score">0</span></p>
+        <p>نقاط اللاعب الثاني: <span id="player2-score">0</span></p>
+    </div>
+    <audio id="background-audio" loop>
+        <source src="your-audio-file.mp3" type="audio/mpeg">
+        متصفحك لا يدعم تشغيل الصوتيات.
+    </audio>
+    <button id="toggle-audio">إيقاف الصوت</button>
+    <script src="script.js"></script>
+</body>
+</html>
